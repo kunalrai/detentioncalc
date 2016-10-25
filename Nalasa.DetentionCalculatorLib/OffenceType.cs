@@ -35,8 +35,9 @@ namespace Nalasa.DetentionCalculatorLib
 
     }
 
-    public class DetentionType
+    public enum DetentionType
     {
-
+        Concurrent=0,
+        Consecutiove=1
     }
 }

@@ -10,7 +10,7 @@ namespace Nalasa.DetentionCalculatorLib
     {
         private Dictionary<string, double> _store = new Dictionary<string, double>();
 
-        public int CalculateDetention()
+        public int CalculateDetention(List<OffenceType>,DetentionRule rule,DetentionType det_type)
         {
             throw new NotImplementedException();
         }

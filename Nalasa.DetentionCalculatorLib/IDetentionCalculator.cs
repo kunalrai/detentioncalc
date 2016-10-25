@@ -8,7 +8,7 @@ namespace Nalasa.DetentionCalculatorLib
 {
     public interface IDetentionCalculator
     {
-        int CalculateDetention();
+        int CalculateDetention(List<OffenceType>,DetentionRule rule,DetentionType det_type);
         void AddRule();
         void AddOffenceType();
     }
