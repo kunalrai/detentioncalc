@@ -11,7 +11,7 @@ namespace Nalasa.DetentionCalculatorLib
         public Dictionary<string, double> _store = new Dictionary<string, double>();
         public Dictionary<string, double> _rulestore = new Dictionary<string, double>();
 
-        public double CalculateDetention(List<OffenceType> offtypes, DetentionRule rule, DetentionType det_type)
+        public double CalculateDetention(List<OffenceType> offtypes, DetentionRule rule, DetentionType det_typ)
         {
             var det_Period=0.0;
             foreach (var item in offtypes)
@@ -56,6 +56,54 @@ namespace Nalasa.DetentionCalculatorLib
             else
                 _store.Add(name, period);
         }
-       
+
+
+        public DetentionCalculator()
+        {
+            InitDefaults();
+        }
+
+        private void InitDefaults()
+        {
+            InitDefaultOffenceType();
+            InitDefaultRules();
+        }
+
+        private void InitDefaultRules()
+        {
+            List<DetentionRule> rules = new List<DetentionRule>{
+                new  DetentionRule{ DetentionDiscount = 10, RuleName="Good Time"},
+                new  DetentionRule{ DetentionDiscount = -10, RuleName="Bad Time"},
+            };
+
+            foreach (var rule in rules)
+            {
+                AddDetentionRule(rule);
+            }
+        }
+
+        private void InitDefaultOffenceType()
+        {
+            List<OffenceType> off_types = new List<OffenceType>()
+            {
+                new OffenceType { OffenceName = "Homework not Done", Period = 1 },
+                new OffenceType { OffenceName = "Stealing", Period = 2 },
+                new OffenceType { OffenceName = "Fighting", Period = .5 },
+                new OffenceType { OffenceName = "Untidyness", Period = 1 },
+                new OffenceType { OffenceName = "Lying", Period = 1.5 },
+                new OffenceType { OffenceName = "SchoolPropertyDamage", Period = 1 },
+
+            };
+
+            foreach (var offType in off_types)
+            {
+                AddOffenceType(offType);
+            }
+        }
+
+
+
+
+
     }
 }
