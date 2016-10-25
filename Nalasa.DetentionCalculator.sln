@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nalasa.DetentionCalculator.Web", "Nalasa.DetentionCalculator\Nalasa.DetentionCalculator.Web.csproj", "{02EE84C7-484F-4C73-ADE3-A4446C77EB18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nalasa.DetentionCalculatorLib", "Nalasa.DetentionCalculatorLib\Nalasa.DetentionCalculatorLib.csproj", "{753AFD8D-B572-4362-8D4A-4E1D665EA413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nalasa.DetentionCalculatorLib.Tests", "Nalasa.DetentionCalculatorLib.Tests\Nalasa.DetentionCalculatorLib.Tests.csproj", "{26F10A68-A3E2-4B7C-9DDE-F71C6415E316}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02EE84C7-484F-4C73-ADE3-A4446C77EB18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EE84C7-484F-4C73-ADE3-A4446C77EB18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EE84C7-484F-4C73-ADE3-A4446C77EB18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EE84C7-484F-4C73-ADE3-A4446C77EB18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753AFD8D-B572-4362-8D4A-4E1D665EA413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753AFD8D-B572-4362-8D4A-4E1D665EA413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753AFD8D-B572-4362-8D4A-4E1D665EA413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753AFD8D-B572-4362-8D4A-4E1D665EA413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F10A68-A3E2-4B7C-9DDE-F71C6415E316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F10A68-A3E2-4B7C-9DDE-F71C6415E316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F10A68-A3E2-4B7C-9DDE-F71C6415E316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F10A68-A3E2-4B7C-9DDE-F71C6415E316}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
